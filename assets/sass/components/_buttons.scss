@@ -1,0 +1,15 @@
+.btn_primary {
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  border: 2px solid #fff;
+  color: #fff;
+  box-shadow: 0 10px 10px -8px #000000c7;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  &::hover {
+    background: #fff;
+    color: #444;
+  }
+}

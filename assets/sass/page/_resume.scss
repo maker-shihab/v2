@@ -1,0 +1,191 @@
+.timeline {
+  &-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .left-part {
+      flex: 0 0 25%;
+      text-align: right;
+      .item-company {
+        font-size: 13px;
+        color: #aaa;
+        padding-left: 20px;
+      }
+    }
+    .divider {
+      flex: 0 0 10%;
+      height: 100%;
+      position: absolute;
+      background: $borderColor;
+      width: 2px;
+      top: 0;
+      bottom: 0;
+      left: 30%;
+      text-align: center;
+      margin: 0 auto;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: #000;
+        left: -4px;
+        top: 9.5px;
+        border: 2px solid #04b4e0;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #04b4e048;
+        left: calc(50% - 10px);
+        top: 5px;
+      }
+    }
+  }
+}
+.right-part {
+  flex: 0 0 65%;
+  padding-bottom: 20px;
+}
+// resume_content
+.resume_content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.progress_content {
+  flex: 0 0 30%;
+}
+.progress {
+  &_item {
+    padding-bottom: 15px;
+  }
+  &_line {
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background: transparent;
+    display: block;
+    position: relative;
+    border: 1px solid #04b4e0;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 90%;
+      background: #04b4e0;
+      border-radius: 8px;
+      top: 2px;
+      left: 2px;
+    }
+  }
+  &_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .knowleg {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+    li {
+      padding: 3px 5px;
+      border-radius: 3px;
+      background: #04b4e0;
+      font-size: 13px;
+    }
+  }
+}
+.coding_progress {
+  padding-top: 20px;
+  .progress_line {
+    border: 1px solid #0ba376;
+    &::after {
+      background: #0ba376;
+    }
+  }
+}
+.print_design {
+  .progress_line::after {
+    width: 65%;
+  }
+}
+.logo_design {
+  .progress_line::after {
+    width: 80%;
+  }
+}
+.graphic_design {
+  .progress_line::after {
+    width: 90%;
+  }
+}
+.javascript {
+  .progress_line::after {
+    width: 95%;
+  }
+}
+.php {
+  .progress_line::after {
+    width: 85%;
+  }
+}
+.htmlcss {
+  .progress_line::after {
+    width: 98%;
+  }
+}
+.smarty {
+  .progress_line::after {
+    width: 75%;
+  }
+}
+.perl {
+  .progress_line::after {
+    width: 90%;
+  }
+}
+// resume_certificat
+.resume_content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.resume_certificat {
+  &-item {
+    display: flex;
+    border: 2px solid #444;
+    border-radius: 10px;
+    .logo {
+      background: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 30px;
+        width: auto;
+        padding: 10px 20px;
+      }
+    }
+    .text {
+      padding: 20px 20px;
+      h3 {
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+      p {
+        color: #aaa;
+        font-size: 15px;
+      }
+    }
+  }
+}
+// resume_certificat

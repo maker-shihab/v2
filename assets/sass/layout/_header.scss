@@ -1,0 +1,125 @@
+// Header area
+.header {
+  background: $sami-darkBg;
+  height: 100vh;
+  max-width: 400px;
+  width: 100%;
+  position: fixed;
+  padding-top: 50px;
+  top: 0;
+  left: 0;
+  &-photo {
+    text-align: center;
+    img {
+      max-width: 150px;
+      width: 100%;
+      max-height: 150px;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 20px 15px -10px #000000c7;
+    }
+  }
+  //   PROFILE
+  &_profile {
+    a {
+      font-size: 28px;
+      font-weight: 700;
+      color: $light;
+      text-align: center;
+      display: block;
+      padding: 10px 0;
+    }
+    h4 {
+      font-weight: 500;
+      color: $light;
+      text-align: center;
+    }
+  }
+  //   VCURD MENU
+  &_vcurd {
+    display: none;
+  }
+  //   SOCAIL LINK
+  &_socail {
+    &_links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+      padding: 15px 0;
+      li {
+        a {
+          color: $light;
+        }
+      }
+    }
+  }
+  //   BUTTONS
+  &_buttons {
+    text-align: center;
+    a {
+      display: inline-block;
+    }
+  }
+  //   COPYRIGHT
+  &_copyrights {
+    position: fixed;
+    font-size: 14px;
+    color: $light;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.header_main_content {
+  position: relative;
+  height: 100vh;
+}
+ul.main_menu {
+  text-align: center;
+  padding: 20px 0;
+  li {
+    a {
+      color: $light;
+      padding: 10px;
+      display: inline-block;
+      transition: 0.3s linear;
+      position: relative;
+      i {
+        transform: scale(0);
+        transition: 0.3s linear;
+        position: absolute;
+        left: -12px;
+        bottom: 14px;
+      }
+      &:hover {
+        color: $secondaryColor;
+        i {
+          transform: scale(1);
+          padding-right: 7px;
+        }
+      }
+    }
+  }
+}
+#page_bar_undo {
+  position: absolute;
+  top: -25px;
+  right: 35px;
+  cursor: pointer;
+  i {
+    font-size: 28px;
+  }
+}
+#page_bar_home {
+  position: fixed;
+  top: 25px;
+  left: 35px;
+  cursor: pointer;
+  i {
+    font-size: 28px;
+  }
+}

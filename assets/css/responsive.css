@@ -1,0 +1,47 @@
+@media screen and (max-width: 1200px) {
+  .main_body {
+    padding: 50px;
+    background: #222;
+    margin-left: 0px;
+  }
+  .headActive {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main_body-intro {
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 30px 0 50px 0;
+  }
+  .ido_content-item {
+    flex: 0 0 95%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  .testimonial_content {
+    flex-direction: column;
+    row-gap: 100px;
+    padding-top: 100px;
+  }
+  .funfacts_content,
+  .pricing_content {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .main_body-intro .second_profile .home_photo {
+    width: 200px;
+    height: 55px;
+    padding-bottom: calc(102% - 94px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_body {
+    padding: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

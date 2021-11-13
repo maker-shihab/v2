@@ -1,0 +1,91 @@
+.contact {
+  display: flex;
+  column-gap: 30px;
+  &_info {
+    flex: 0 0 25%;
+    &_item {
+      padding: 20px 30px;
+      text-align: center;
+      background: #333;
+      border: 2px solid #444;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      i {
+        color: #04b4e0;
+        font-size: 36px;
+      }
+      h3 {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  //   CONTACT FORM
+  &_form {
+    width: 100%;
+    &_map {
+      padding-bottom: 40px;
+      iframe {
+        width: 100%;
+      }
+    }
+    .form_info {
+      display: flex;
+      column-gap: 20px;
+      label {
+        color: #04b4e0;
+        padding-bottom: 5px;
+        font-size: 14px;
+        display: block;
+      }
+      input {
+        display: inline-block;
+        width: 100%;
+        border: 2px solid #444;
+        background: transparent;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: #fff;
+        outline: none;
+        transition: 0.3s ease-in;
+        margin-bottom: 16px;
+        font-family: inherit;
+        box-sizing: border-box;
+        &:hover,
+        &:focus {
+          border-color: $secondaryColor;
+        }
+      }
+      textarea {
+        display: block;
+        width: 100%;
+        background: transparent;
+        border: 2px solid #444;
+        border-radius: 5px;
+        padding: 10px 15px;
+        height: 208px;
+        margin-top: 22px;
+        color: #fff;
+        outline: none;
+        transition: 0.3s ease-in;
+        font-family: inherit;
+        box-sizing: border-box;
+        &:hover,
+        &:focus {
+          border-color: $secondaryColor;
+        }
+      }
+    }
+    .form_submit {
+      input.btn_primary {
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background: #fff;
+          color: #444;
+        }
+      }
+    }
+  }
+}
