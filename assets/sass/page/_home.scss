@@ -228,3 +228,10 @@
     }
   }
 }
+.clients_content-item {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.clients_content-item.slick-slide.slick-current.slick-active.slick-center {
+  transform: scale(1.5);
+}
